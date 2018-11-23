@@ -6,7 +6,7 @@ Contains the symfony website skeleton, Webpack encore, jQuery and Bootstrap.
 Quick start
 -----------
 ```
-composer install
+composer create-project apokalipscke/webapp-skeleton my-app
 npm install
 ```
 
