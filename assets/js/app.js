@@ -1,9 +1,9 @@
-require('../css/app.scss');
+require('../scss/app.scss');
 let $ = require('jquery');
 require('bootstrap');
 
 $(function () {
     console.log("ready");
 
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
 });
