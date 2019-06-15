@@ -2,7 +2,8 @@
   "name": "apokalipscke/webapp-skeleton",
   "type": "project",
   "license": "MIT",
-  "description": "A skeleton to start a new Symfony webapp with bootstrap and webpack encore",
+  "description": "A skeleton to start a new Symfony webapp with bootstrap and webpack encore.",
+  "keywords": ["webapp", "skeleton", "symfony", "bootstrap", "webpack", "webpack encore"],
   "minimum-stability": "stable",
   "require": {
     "php": "^7.1.3",
