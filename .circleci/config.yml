@@ -24,10 +24,10 @@ jobs:
             - node-v1-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found (See https://circleci.com/docs/2.0/caching/)
             - node-v1-
-      - run: yarn install
+      - run: npm install
       - save_cache: # special step to save the dependency cache with the `package.json` cache key template
           key: node-v1-{{ checksum "package.json" }}
           paths:
             - node_modules
-      - run: yarn run build
+      - run: npm run build
       - run: php bin/phpunit
