@@ -31,5 +31,14 @@ jobs:
             - node_modules
       - run: npm run build
   test:
+    docker:
+      - image: circleci/php:7.3-node-browsers
     steps:
+      - checkout
       - run: php bin/phpunit
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
